@@ -16,8 +16,8 @@ jsproxy_config({
       label: '演示服务-香港节点',
       lines: {
         // 主机:权重
-        'a.gzt.workers.dev:443': 1,
-        'a.gzt.workers.dev:443': 2,
+        'a.gzt.workers.dev': 1,
+         
       }
     },
     'demo-sg': {
@@ -46,6 +46,7 @@ jsproxy_config({
         //'b.hehe.workers.dev': 1,
         //'b.lulu.workers.dev': 1,
         //'b.jsproxy.workers.dev': 1,
+        'a.gzt.workers.dev'
       }
     }
   },
