@@ -16,8 +16,8 @@ jsproxy_config({
       label: '演示服务-香港节点',
       lines: {
         // 主机:权重
-        'node-aliyun-hk-1.etherdream.com:8443': 1,
-        'node-aliyun-hk-2.etherdream.com:8443': 2,
+        'github.gzt.workers.dev:443': 1,
+        'github.gzt.workers.dev:443': 2,
       }
     },
     'demo-sg': {
