@@ -12,6 +12,12 @@ jsproxy_config({
 
   // 节点配置
   node_map: {
+    'mysite': {
+      label: '当前站点',
+      lines: {
+        [location.host]: 1,
+      }
+    },
     'demo-hk': {
       label: '演示服务-香港节点',
       lines: {
@@ -54,8 +60,8 @@ jsproxy_config({
   /**
    * 默认节点
    */
-  // node_default: 'mysite',
-  node_default: /github\.io$/.test(location.host) ? 'cfworker' : 'cfworker',
+  node_default: 'mysite',
+//   node_default: /github\.io$/.test(location.host) ? 'cfworker' : 'cfworker',
 
   /**
    * 加速节点
