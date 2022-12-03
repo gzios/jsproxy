@@ -21,10 +21,10 @@ jsproxy_config({
     // 该节点用于加载大体积的静态资源
     'cfworker': {
       label: '自定义站点',
-      
+
       lines: {
-         'e.gzt.workers.dev': 1,
-        
+        'e.gzt.workers.dev': 1,
+
       }
     }
   },
@@ -33,7 +33,7 @@ jsproxy_config({
    * 默认节点
    */
   node_default: 'mysite',
-//   node_default: /github\.io$/.test(location.host) ? 'cfworker' : 'cfworker',
+  //   node_default: /github\.io$/.test(location.host) ? 'cfworker' : 'cfworker',
 
   /**
    * 加速节点
@@ -44,10 +44,10 @@ jsproxy_config({
    * 静态资源 CDN 地址
    * 用于加速 `assets` 目录中的资源访问
    */
-  assets_cdn: 'https://gzios.github.io/jsproxy/assets/',
+  // assets_cdn: 'https://gzios.github.io/jsproxy/assets/',
 
   // 本地测试时打开，否则访问的是线上的
-  // assets_cdn: 'assets/',
+  assets_cdn: 'assets/',
 
   // 首页路径
   index_path: 'index_v3.html',
@@ -64,14 +64,14 @@ jsproxy_config({
    * URL 自定义处理（设计中）
    */
   url_handler: {
-//     'https://www.baidu.com/img/baidu_resultlogo@2.png': {
-//       replace: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png'
-//     },
-//     'https://www.pornhub.com/': {
-//       redir: 'https://php.net/'
-//     },
-//     'http://haha.com/': {
-//       content: 'Hello World'
-//     },
+    //     'https://www.baidu.com/img/baidu_resultlogo@2.png': {
+    //       replace: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png'
+    //     },
+    //     'https://www.pornhub.com/': {
+    //       redir: 'https://php.net/'
+    //     },
+    //     'http://haha.com/': {
+    //       content: 'Hello World'
+    //     },
   }
 })
